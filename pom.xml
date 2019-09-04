@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>com.wegoshare</groupId>
+        <artifactId>oss-parent</artifactId>
+        <version>1.0.0</version>
+    </parent>
+
+    <groupId>com.wegoshare</groupId>
+    <artifactId>core</artifactId>
+    <name>Wegoshare Core</name>
+    <version>1.0.0</version>
+    <packaging>bundle</packaging>
+
+    <issueManagement>
+        <url>https://github.com/Wegoshare/wgs-core/issues</url>
+        <system>GitHub Issues</system>
+    </issueManagement>
+
+    <scm>
+        <url>https://github.com/Wegoshare/wgs-core</url>
+        <connection>scm:git:git://github.com/Wegoshare/wgs-core.git</connection>
+        <developerConnection>scm:git:git://github.com/Wegoshare/wgs-core.git</developerConnection>
+        <tag>HEAD</tag>
+    </scm>
+
+    <developers>
+        <developer>
+            <name>Backend Wegoshare</name>
+            <email>backend@wegoshare.com</email>
+            <organization>Wegoshare</organization>
+            <organizationUrl>http://www.wegoshare.com</organizationUrl>
+        </developer>
+    </developers>
+  
+    <properties>
+        <osgi.import.pkg>
+            *
+        </osgi.import.pkg>
+        <osgi.export.pkg>
+            com.wegoshare.core*
+        </osgi.export.pkg>
+        <osgi.private.pkg/>
+    </properties>
+
+</project>
